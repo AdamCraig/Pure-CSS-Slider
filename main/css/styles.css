@@ -1,0 +1,99 @@
+body {
+  background-color: #FFFFFF; }
+  body .slider-parent-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px; }
+    body .slider-parent-container * {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -webkit-touch-callout: none; }
+    body .slider-parent-container .slider-inner {
+      position: relative; }
+      body .slider-parent-container .slider-inner input {
+        display: none; }
+        body .slider-parent-container .slider-inner input:checked + .slide-container {
+          opacity: 1;
+          display: block; }
+        body .slider-parent-container .slider-inner input:checked + .slide-container .previous-next-controls label {
+          display: block; }
+      body .slider-parent-container .slider-inner .slide-container {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: all 0.5s ease-in-out; }
+        body .slider-parent-container .slider-inner .slide-container .slide img {
+          width: 100%;
+          height: auto; }
+        body .slider-parent-container .slider-inner .slide-container .slide:hover + .previous-next-controls label {
+          opacity: 1; }
+        body .slider-parent-container .slider-inner .slide-container .previous-next-controls {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; }
+          body .slider-parent-container .slider-inner .slide-container .previous-next-controls label {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.12);
+            transition: box-shadow 0.5s;
+            cursor: pointer; }
+            @media screen and (min-width: 768px) {
+              body .slider-parent-container .slider-inner .slide-container .previous-next-controls label {
+                width: 50px;
+                height: 50px; } }
+            body .slider-parent-container .slider-inner .slide-container .previous-next-controls label:hover {
+              box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.36); }
+            body .slider-parent-container .slider-inner .slide-container .previous-next-controls label.previous {
+              left: 20px; }
+            body .slider-parent-container .slider-inner .slide-container .previous-next-controls label.next {
+              right: 20px; }
+            body .slider-parent-container .slider-inner .slide-container .previous-next-controls label span {
+              cursor: pointer;
+              font-family: monospace;
+              font-size: 20px;
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); }
+              @media screen and (min-width: 768px) {
+                body .slider-parent-container .slider-inner .slide-container .previous-next-controls label span {
+                  font-size: 28px; } }
+      body .slider-parent-container .slider-inner .pagination-container {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center; }
+        @media screen and (min-width: 768px) {
+          body .slider-parent-container .slider-inner .pagination-container {
+            top: 20px; } }
+        body .slider-parent-container .slider-inner .pagination-container label {
+          display: inline-block;
+          cursor: pointer;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          border-radius: 50%;
+          background-color: tomato;
+          transition: transform 0.5s; }
+          @media screen and (min-width: 768px) {
+            body .slider-parent-container .slider-inner .pagination-container label {
+              width: 15px;
+              height: 15px; } }
+          body .slider-parent-container .slider-inner .pagination-container label:hover {
+            transform: scale(1.5); }
