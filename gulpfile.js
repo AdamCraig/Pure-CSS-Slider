@@ -2,17 +2,17 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function(){
-  return gulp.src('main/scss/styles.scss')
+  return gulp.src('scss/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('main/css'))
+    .pipe(gulp.dest('css'))
 });
 
 gulp.task('default', function(){
-  return gulp.src('main/scss/styles.scss')
+  return gulp.src('scss/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('main/css'))
+    .pipe(gulp.dest('css'))
 });
 
 gulp.task('watch', function(){
-  gulp.watch('main/scss/*.scss', gulp.series(['sass']));
+  gulp.watch('scss/*.scss', gulp.series(['sass']));
 })
