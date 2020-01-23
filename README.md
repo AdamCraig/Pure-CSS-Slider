@@ -20,7 +20,7 @@ For local development:
 
 ## Design Process Notes
 
-The design of the slider is meant to be minimalist, simple, and clean, without taking a lot of time doing anything too flashy
+The design of the slider is meant to be minimalist, simple, and clean, without taking a lot of time doing anything too flashy.
 
 ## Development Process Notes
 
